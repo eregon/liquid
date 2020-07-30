@@ -20,3 +20,7 @@ def bench
     end
   end
 end
+
+if $0 == __FILE__
+  require File.expand_path(ARGV.fetch(0))
+end
