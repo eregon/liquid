@@ -3,7 +3,7 @@ def bench
     File.open('/dev/urandom') do |dev_urandom|
       ips_log = []
       iterations = 1
-      loop do
+      loop do # 60.times do
         start = Process.clock_gettime(Process::CLOCK_MONOTONIC)
         iterations.times do
           input = dev_urandom.readbyte
