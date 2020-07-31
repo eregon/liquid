@@ -27,4 +27,4 @@ def bench
   puts "TOTAL: #{'%.3f' % total} s, avg #{(ITERATIONS/total).to_i} i/s, max #{max} i/s"
 end
 
-require File.expand_path(ARGV.fetch(0))
+require File.expand_path(ARGV.fetch(0)) if ARGV.size >= 1
