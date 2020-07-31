@@ -17,8 +17,7 @@ def bench
 
         run = i + 1
         if run < 10 or run % 10000 == 0
-          puts run
-          puts ips
+          puts "#{run.to_s.rjust(6)} #{ips}"
         end
       end
     end
